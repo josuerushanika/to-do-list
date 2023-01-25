@@ -10,6 +10,13 @@
     box-shadow: rgba(20, 18, 18, 0.2) 0 2px 8px 0;
   }
 
+  i {
+    color: #a1a1a1;
+  }
+
+  .edit-task {
+    margin-left: 98%;
+  }
 
   #refresh { 
     margin-right: 0;
