@@ -65,6 +65,12 @@ i {
   margin-left: -40px;
 }
 
+.todotask {
+  margin: 10px;
+  font-size: large;
+  padding-left: 100px;
+}
+
 .todo-list > li {
   font-size: 14px;
   font-weight: 300;
