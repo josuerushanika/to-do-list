@@ -112,6 +112,15 @@ input:focus {
   font-weight: 900;
 }
 
+.fa-trash-can {
+  color: red;
+  text-decoration: none;
+}
+
+.li {
+  text-decoration: none;
+}
+
 .todo-footer a {
   margin: 0;
   text-align: center;
