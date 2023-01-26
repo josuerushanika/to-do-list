@@ -1,3 +1,7 @@
+li {
+  list-style: none;
+}
+
 .all-container {
   display: flex;
   flex-direction: column;
@@ -106,14 +110,13 @@ input:focus {
 }
 
 .todo-footer {
-  background: rgb(209, 123, 123);
+  background:  rgb(236 230 230); 
   text-align: center;
   padding: 16px;
   font-weight: 900;
 }
 
 .fa-trash-can {
-  color: red;
   text-decoration: none;
 }
 

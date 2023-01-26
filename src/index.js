@@ -24,9 +24,9 @@ const getListFromLocalStorage = () => {
 // refresh items
 
 const refreshItems = (Taskarray) => {
-  for (let i = 1; i < Taskarray.length; i += 1) {
-    const indexes = i + 1;
-    Taskarray[i].index = indexes;
+  for (let i = 0; i < Taskarray.length; i += 1) {
+    const index = i + 1;
+    Taskarray[i].index = index;
   }
 };
 
@@ -60,6 +60,7 @@ const createTask = () => {
     taskDesc.value = task.description;
 
     const deleteTask = document.createElement('i');
+    console.log('deleteTask');
     taskDesc.addEventListener('change', (e) => {
       e.preventDefault();
       taskEdit(e.target.value, task.index);
@@ -74,7 +75,8 @@ const createTask = () => {
           myLocalStorage.splice(key, 1);
         }
       });
-      refreshItems(mylocal);
+      Taskarray = myLocalStorage;
+      refreshItems(Taskarray);
       addListToLocalStorage();
       e.target.parentElement.remove();
     });
@@ -91,7 +93,7 @@ const addToTasks = () => {
     description: nouveauTask.value,
     index: len + 1,
   });
-  Taskarray.value = '';
+  nouveauTask.value = '';
   addListToLocalStorage();
   createTask();
 };
