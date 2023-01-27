@@ -1,4 +1,5 @@
 import './style.css';
+import addstate from './modules/filestatus.js';
 
 let Taskarray = [];
 const allTask = document.querySelector('.displayed-element');
