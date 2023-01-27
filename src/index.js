@@ -1,4 +1,5 @@
 import './style.css';
+import addstate from './modules/filestatus.js';
 
 let Taskarray = [];
 const allTask = document.querySelector('.displayed-element');
@@ -55,12 +56,17 @@ const createTask = () => {
       checkbox.setAttribute('checked', 'checked');
     }
 
+    checkbox.addEventListener('change', (e) => {
+      e.preventDefault();
+      addstate(Taskarray, e.target, task.index);
+      addListToLocalStorage();
+    });
+
     const taskDesc = document.createElement('input');
     taskDesc.classList.add('todotask');
     taskDesc.value = task.description;
 
     const deleteTask = document.createElement('i');
-    console.log('deleteTask');
     taskDesc.addEventListener('change', (e) => {
       e.preventDefault();
       taskEdit(e.target.value, task.index);
@@ -119,4 +125,19 @@ resete.addEventListener('click', () => {
   clearAll();
   addListToLocalStorage();
   createTask();
+});
+
+// add filter and remove all
+const removeAllCompletedTasks = () => {
+  const completedTasks = Taskarray.filter((task) => task.checked !== true);
+  Taskarray = completedTasks;
+  console.log('click', Taskarray);
+  addListToLocalStorage();
+  createTask();
+};
+
+const clearAllCompletedTasks = document.querySelector('.clear-completed-task');
+
+clearAllCompletedTasks.addEventListener('click', () => {
+  removeAllCompletedTasks();
 });
