@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
 <!-- TABLE OF CONTENTS -->
 
@@ -60,9 +59,9 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
-#### <a href="">[Live Demo Link]()</a>
+<!-- #### <a href="">[Live Demo Link]()</a> -->
 
 
 
