@@ -58,9 +58,9 @@
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+ ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- #### <a href="">[Live Demo Link]( josuerushanika.github.io/to-do-list/dist)</a> -->
+ #### [Live Demo Link]( josuerushanika.github.io/to-do-list/dist) 
 
 
 
