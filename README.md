@@ -60,7 +60,7 @@
 
  ## 🚀 Live Demo <a name="live-demo"></a>
 
- #### [Live Demo Link]( josuerushanika.github.io/to-do-list/dist) 
+ #### [Live Demo Link](https://josuerushanika.github.io/to-do-list/dist/) 
 
 
 
